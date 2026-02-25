@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: yandexgpt-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: YANDEX_FOLDER_ID
+        sync: false
+      - key: YANDEX_API_KEY
+        sync: false
